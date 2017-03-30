@@ -1,0 +1,18 @@
+{
+  "name": "interactive-solutions/sms",
+  "type": "Sms service for 46elks",
+  "description": "Interactive Solutions extension for 46Elk",
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^7.0.0",
+	"guzzlehttp/guzzle": "~6.0",
+    "interactive-solutions/zf-bernard": "^1.0.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.8"
+  },
+    "classmap": [
+      "./Module.php"
+    ]
+  }
+}

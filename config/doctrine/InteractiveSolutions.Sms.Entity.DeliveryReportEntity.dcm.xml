@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping">
+    <entity name="InteractiveSolutions\Sms\Entity\DeliveryReportEntity"
+            table="interactive_solutions_sms_delivery_reports"
+            repository-class="InteractiveSolutions\Sms\Repository\DeliveryReportRepository">
+
+        <id name="id" type="string"/>
+
+        <field name="status" type="string"/>
+        <field name="sentTo" type="string"/>
+        <field name="sentFrom" type="string"/>
+        <field name="message" type="text"/>
+        <field name="deliveredAt" type="datetime" nullable="true"/>
+        <field name="createdAt" type="datetime"/>
+        <field name="updatedAt" type="datetime"/>
+    </entity>
+</doctrine-mapping>

@@ -1,0 +1,22 @@
+<?php
+/**
+ * @author    Jonas Eriksson <jonas.eriksson@interactivesolutions.se>
+ *
+ * @copyright Interactive Solutions
+ */
+use InteractiveSolutions\Sms\Options\SmsOptions;
+
+declare(strict_types=1);
+
+return [
+    'interactive_solutions' => [
+        'options' => [
+            SmsOptions::class => [
+                'apiUsername' => '',
+                'apiPassword' => '',
+                'number'      => '',
+                'callbackUrl' => '',
+            ]
+        ],
+    ],
+];
