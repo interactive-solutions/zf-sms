@@ -12,6 +12,23 @@ If you want to receive delivery reports, specify the `callbackUrl` in the `SmsOp
 `DeliveryReportCollectionController` or you can write your own. Usage of the existing controller allows you to update
 the `DeliveryReportEntity` created by this lib by simply adding a route for the controller.
 
+Code to setup existing controller:
+```
+use InteractiveSolutions\Sms\Controller\DeliveryReportCollectionController;
+use Zend\Mvc\Router\Http\Literal;
+
+return [
+    'sms-delivery-reports' => [
+        'type'    => Literal::class,
+        'options' => [
+            'route'    => '/callback-url-from-options',
+            'defaults' => [
+                'controller' => DeliveryReportCollectionController::class
+            ],
+        ],
+    ],
+];
+```
 # Usage
 Just import the `SmsService` and call it with a valid `SmsMessage` and you're all done!
 
