@@ -13,7 +13,7 @@ If you want to receive delivery reports, specify the `callbackUrl` in the `SmsOp
 the `DeliveryReportEntity` created by this lib by simply adding a route for the controller.
 
 Code to setup existing controller:
-```
+```php
 use InteractiveSolutions\Sms\Controller\DeliveryReportCollectionController;
 use Zend\Mvc\Router\Http\Literal;
 
@@ -39,7 +39,7 @@ This lib also provides the a background task for this purpose with the `SendSmsT
 to zf-bernard please take a look at that repository.
 
 Code to send sms in background:
-```
+```php
 use InteractiveSolutions\Bernard\Producer;
 ...
 //code to create/config bernard producer
