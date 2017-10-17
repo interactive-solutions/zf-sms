@@ -7,10 +7,12 @@
     "doctrine/doctrine-orm-module": "0.9.2",
     "guzzlehttp/guzzle": "~6.0"
   },
-  "psr-4": {
-    "InteractiveSolutions\\Sms\\": "src/"
-  },
-  "classmap": [
-    "./Module.php"
-  ]
+  "autoload": {
+    "psr-4": {
+      "InteractiveSolutions\\Sms\\": "src/"
+    },
+    "classmap": [
+      "./Module.php"
+    ]
+  }
 }
